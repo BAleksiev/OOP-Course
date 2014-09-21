@@ -1,0 +1,6 @@
+D:\xampp\htdocs\DefiningClasses\02.LaptopShop\bin\Debug\02.LaptopShop.exe.config
+D:\xampp\htdocs\DefiningClasses\02.LaptopShop\bin\Debug\02.LaptopShop.exe
+D:\xampp\htdocs\DefiningClasses\02.LaptopShop\bin\Debug\02.LaptopShop.pdb
+D:\xampp\htdocs\DefiningClasses\02.LaptopShop\obj\Debug\02.LaptopShop.csprojResolveAssemblyReference.cache
+D:\xampp\htdocs\DefiningClasses\02.LaptopShop\obj\Debug\02.LaptopShop.exe
+D:\xampp\htdocs\DefiningClasses\02.LaptopShop\obj\Debug\02.LaptopShop.pdb

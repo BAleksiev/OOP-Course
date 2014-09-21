@@ -1,0 +1,9 @@
+D:\xampp\htdocs\SoftwareUniversity\DefiningClasses\01.Persons\bin\Debug\01.Persons.exe.config
+D:\xampp\htdocs\SoftwareUniversity\DefiningClasses\01.Persons\bin\Debug\01.Persons.exe
+D:\xampp\htdocs\SoftwareUniversity\DefiningClasses\01.Persons\bin\Debug\01.Persons.pdb
+D:\xampp\htdocs\SoftwareUniversity\DefiningClasses\01.Persons\obj\Debug\01.Persons.csprojResolveAssemblyReference.cache
+D:\xampp\htdocs\SoftwareUniversity\DefiningClasses\01.Persons\obj\Debug\01.Persons.exe
+D:\xampp\htdocs\SoftwareUniversity\DefiningClasses\01.Persons\obj\Debug\01.Persons.pdb
+D:\xampp\htdocs\DefiningClasses\01.Persons\bin\Debug\01.Persons.exe.config
+D:\xampp\htdocs\DefiningClasses\01.Persons\obj\Debug\01.Persons.exe
+D:\xampp\htdocs\DefiningClasses\01.Persons\obj\Debug\01.Persons.pdb

@@ -1,0 +1,6 @@
+D:\xampp\htdocs\DefiningClasses\03.PCCatalogue\bin\Debug\03.PCCatalogue.exe.config
+D:\xampp\htdocs\DefiningClasses\03.PCCatalogue\bin\Debug\03.PCCatalogue.exe
+D:\xampp\htdocs\DefiningClasses\03.PCCatalogue\bin\Debug\03.PCCatalogue.pdb
+D:\xampp\htdocs\DefiningClasses\03.PCCatalogue\obj\Debug\03.PCCatalogue.csprojResolveAssemblyReference.cache
+D:\xampp\htdocs\DefiningClasses\03.PCCatalogue\obj\Debug\03.PCCatalogue.exe
+D:\xampp\htdocs\DefiningClasses\03.PCCatalogue\obj\Debug\03.PCCatalogue.pdb
