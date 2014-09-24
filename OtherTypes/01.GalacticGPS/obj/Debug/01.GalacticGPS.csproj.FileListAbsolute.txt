@@ -1,0 +1,2 @@
+D:\xampp\htdocs\OOP-Course\OtherTypes\01.GalacticGPS\bin\Debug\01.GalacticGPS.exe.config
+D:\xampp\htdocs\OOP-Course\OtherTypes\01.GalacticGPS\obj\Debug\01.GalacticGPS.csprojResolveAssemblyReference.cache
