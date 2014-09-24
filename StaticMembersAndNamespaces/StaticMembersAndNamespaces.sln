@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.2.3.Point3D-DistanceCalc-Paths", "1.2.3.Point3D-DistanceCalc-Paths\1.2.3.Point3D-DistanceCalc-Paths.csproj", "{BE206B8E-032A-476E-B278-9F03088F5DC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.HTMLDispatcher", "04.HTMLDispatcher\04.HTMLDispatcher.csproj", "{BD4E8A58-0404-4635-92FB-225C0AD460E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.BitArray", "05.BitArray\05.BitArray.csproj", "{B9FD7F76-FA41-4C4B-8CD5-E33D3482AA33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Namespaces", "06.Namespaces\06.Namespaces.csproj", "{D793D683-E7ED-437D-8F7E-A562D72D7800}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{BE206B8E-032A-476E-B278-9F03088F5DC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE206B8E-032A-476E-B278-9F03088F5DC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE206B8E-032A-476E-B278-9F03088F5DC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD4E8A58-0404-4635-92FB-225C0AD460E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD4E8A58-0404-4635-92FB-225C0AD460E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD4E8A58-0404-4635-92FB-225C0AD460E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD4E8A58-0404-4635-92FB-225C0AD460E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FD7F76-FA41-4C4B-8CD5-E33D3482AA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FD7F76-FA41-4C4B-8CD5-E33D3482AA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FD7F76-FA41-4C4B-8CD5-E33D3482AA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FD7F76-FA41-4C4B-8CD5-E33D3482AA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D793D683-E7ED-437D-8F7E-A562D72D7800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D793D683-E7ED-437D-8F7E-A562D72D7800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D793D683-E7ED-437D-8F7E-A562D72D7800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D793D683-E7ED-437D-8F7E-A562D72D7800}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
