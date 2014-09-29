@@ -3,7 +3,8 @@ using System.Text;
 
 namespace GenericList
 {
-    class GenericList<T>
+    [Version(2, 5)]
+    public class GenericList<T> where T : IComparable<T>
     {
         const int DefaultCapacity = 64;
 
@@ -48,40 +49,126 @@ namespace GenericList
             this.length++;
         }
 
-        // change name
-        //public T Access()
-        //{
+        public T FindAt(int index)
+        {
+            if (index < 0 || index >= this.Length)
+            {
+                throw new IndexOutOfRangeException();
+            }
+            return this.elements[index];
+        }
 
-        //}
+        public void Remove(int index)
+        {
+            if (index < 0 || index >= this.Length)
+            {
+                throw new IndexOutOfRangeException();
+            }
 
-        //public void Remove()
-        //{
+            for (int i = index; i < this.Length - 1; i++)
+            {
+                this.elements[i] = this.elements[i + 1];
+            }
 
-        //}
+            this.length--;
+            this.elements[this.Length] = default(T);
+        }
 
-        //public void Insert()
-        //{
+        public void Insert(int index, T element)
+        {
+            if (index < 0 || index >= this.Length)
+            {
+                throw new IndexOutOfRangeException();
+            }
 
-        //}
+            if (this.Length >= this.Capacity)
+            {
+                this.Expand();
+            }
 
-        //public void Clear()
-        //{
+            for (int i = this.Length; i > index; i--)
+            {
+                this.elements[i] = this.elements[i - 1];
+            }
 
-        //}
+            this.length++;
+            this.elements[index] = element;
+        }
 
-        //public T Find()
-        //{
+        public void Clear()
+        {
+            this.elements = new T[this.Capacity];
+            this.length = 0;
+        }
 
-        //}
+        public int IndexOf(T element)
+        {
+            for (int i = 0; i < this.Length; i++)
+            {
+                if (this.elements[i].Equals(element))
+                {
+                    return i;
+                }
+            }
 
-        //public bool Contains()
-        //{
+            return -1;
+        }
 
-        //}
+        public bool Contains(T element)
+        {
+            if (this.IndexOf(element) != -1)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public T Min()
+        {
+            if (this.Length < 1)
+            {
+                throw new InvalidOperationException("Empty list!");
+            }
+
+            T min = this.elements[0];
+
+            for (int i = 0; i < this.Length; i++)
+            {
+                if (this.elements[i].CompareTo(min) < 0)
+                {
+                    min = this.elements[i];
+                }
+            }
+
+            return min;
+        }
+
+        public T Max()
+        {
+            if (this.Length < 1)
+            {
+                throw new InvalidOperationException("Empty list!");
+            }
+
+            T max = this.elements[0];
+
+            for (int i = 0; i < this.Length; i++)
+            {
+                if (this.elements[i].CompareTo(max) > 0)
+                {
+                    max = this.elements[i];
+                }
+            }
+
+            return max;
+        }
 
         private void Expand()
         {
-
+            T[] newArr = new T[this.Capacity * 2];
+            Array.Copy(this.elements, newArr, this.Capacity);
+            this.elements = newArr;
         }
 
         public override string ToString()
