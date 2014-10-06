@@ -16,7 +16,14 @@ namespace ClassStudent
 
         public Student(string firstName, string lastName, int age, string facultyNumber, string phone, string email, IList<int> marks, int groupNumber)
         {
-
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Age = age;
+            this.FacultyNumber = facultyNumber;
+            this.Phone = phone;
+            this.Email = email;
+            this.Marks = marks;
+            this.GroupNumber = groupNumber;
         }
 
         public string FirstName
@@ -50,7 +57,7 @@ namespace ClassStudent
             get { return this.age; }
             set
             {
-                if (age <= 0 || age > 150)
+                if (value <= 0 || value > 150)
                 {
                     throw new ArgumentOutOfRangeException("Invalid age!");
                 }
@@ -100,13 +107,36 @@ namespace ClassStudent
         public IList<int> Marks
         {
             get { return this.marks; }
-            set { this.marks = value; }
+            set
+            {
+                if (value == null)
+                {
+                    this.marks = new List<int>();
+                }
+                this.marks = value;
+            }
         }
 
         public int GroupNumber
         {
             get { return this.groupNumber; }
             set { this.groupNumber = value; }
+        }
+
+        public override string ToString()
+        {
+            string marks = string.Join(", ", this.Marks as IEnumerable<int>);
+
+            return string.Format(
+            "{0} {1}, age: {2}, fac number: {3}, phone: {4}, email: {5}, marks: {{ {6} }}, group: {7}",
+            this.FirstName,
+            this.LastName,
+            this.Age,
+            this.FacultyNumber,
+            this.Phone,
+            this.Email,
+            marks,
+            this.GroupNumber);
         }
 
     }
