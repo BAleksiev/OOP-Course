@@ -1,5 +1,7 @@
 package product;
 
+import shop.AgeRestriction;
+
 public abstract class Product implements Buyable {
 
     private String name;
@@ -7,7 +9,7 @@ public abstract class Product implements Buyable {
     private int quantity;
     private AgeRestriction ageRestriction;
     
-    public Product(String name, double price, AgeRestriction ageRestriction) throws Exception {
+    public Product(String name, double price, int quantity, AgeRestriction ageRestriction) throws Exception {
         this.setName(name);
         this.setPrice(price);
         this.setQuantity(quantity);
